@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 input = gets.chomp.split(' ')
 N = input[0].to_i
 tdash = input[1]

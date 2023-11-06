@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n = gets.to_i
 base_data = []
 

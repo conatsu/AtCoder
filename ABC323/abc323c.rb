@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 N, M = gets.chomp.split(' ').map(&:to_i)
 alist = gets.chomp.split(' ').map(&:to_i)
 question_scores = {}
-for i in 1..M do
+(1..M).each do |i|
   question_scores[i] = alist[i - 1]
 end
 
@@ -23,7 +25,7 @@ end
 # 各プレイヤーについて必要な問題数を計算する
 players_answer_statuses.each_with_index do |current_player, idx|
   # 自分を除いた他のプレイヤーの最大スコアを計算
-  max_score_others = (players_answer_statuses[0...idx] + players_answer_statuses[idx + 1..-1]).map do |player|
+  max_score_others = (players_answer_statuses[0...idx] + players_answer_statuses[idx + 1..]).map do |player|
     player['score']
   end.max
 

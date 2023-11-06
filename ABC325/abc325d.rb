@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PriorityQueue
   def initialize
     @heap = []
@@ -78,12 +80,12 @@ loop do
     i = [i, v[it][0]].max
   end
 
-  while it < n and v[it][0] == i
+  while (it < n) && (v[it][0] == i)
     pq.push(v[it][1])
     it += 1
   end
 
-  pq.pop while !pq.empty? and pq.peek < i
+  pq.pop while !pq.empty? && (pq.peek < i)
 
   unless pq.empty?
     pq.pop

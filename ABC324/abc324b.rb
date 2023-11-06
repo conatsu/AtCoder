@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n = gets.chomp.to_i
 loop do
   break unless n.even?
@@ -5,7 +7,7 @@ loop do
   n /= 2
 end
 loop do
-  break unless n % 3 == 0
+  break unless (n % 3).zero?
 
   n /= 3
 end

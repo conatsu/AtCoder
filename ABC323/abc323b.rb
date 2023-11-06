@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 N = gets.chomp.to_i
 match_result_hash = {}
 player_id = 1
