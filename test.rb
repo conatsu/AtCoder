@@ -5,3 +5,8 @@ def factorial(n)
 end
 
 puts factorial(13)
+
+
+target = 100000
+puts (target ** (1.0/3))
+
