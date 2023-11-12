@@ -6,7 +6,8 @@ end
 
 puts factorial(13)
 
+target = 100_000
+puts(target**(1.0 / 3))
 
-target = 100000
-puts (target ** (1.0/3))
-
+puts 678_763_683_900_595.to_s.length
+puts 936_294_041_850_197.to_s.length
