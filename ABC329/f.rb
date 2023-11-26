@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'set'
 
 N, Q = gets.chomp.split.map(&:to_i)

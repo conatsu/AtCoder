@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def count_same_char_substrings(s)
   count = 0
   max_length_seen = Hash.new(0)

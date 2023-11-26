@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   attr_accessor :price, :function_list, :name
 

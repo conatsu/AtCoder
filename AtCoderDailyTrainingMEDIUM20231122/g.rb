@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 S = gets.chomp.split('').map(&:to_i)
 
 acc_xor = Array.new(S.size + 1, 0)

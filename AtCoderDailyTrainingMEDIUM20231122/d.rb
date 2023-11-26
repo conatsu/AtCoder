@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 S = gets.chomp.split('')
 T = gets.chomp.split('')
 

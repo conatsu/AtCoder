@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 A, B, C, D = gets.chomp.split.map(&:to_i)
 
 def is_prime(num)
   return false if num < 2
 
   (2..Math.sqrt(num)).each do |i|
-    return false if num % i == 0
+    return false if (num % i).zero?
   end
   true
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n, m = gets.chomp.split.map(&:to_i)
 s = gets.chomp
 c = gets.chomp.split.map(&:to_i)

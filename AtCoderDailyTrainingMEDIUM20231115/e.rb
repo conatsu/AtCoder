@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 N = gets.chomp.to_i
-Slist = []
+Slist = [].freeze
 N.times do
   Slist << gets.chomp
 end

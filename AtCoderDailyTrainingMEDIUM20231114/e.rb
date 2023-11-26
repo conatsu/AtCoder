@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 H, W = gets.chomp.split.map(&:to_i)
 grid = Array.new(H) { gets.chomp.split('') }
 
@@ -33,5 +35,5 @@ end
 if infiniteloop
   puts(-1)
 else
-  puts (i + 1).to_s + ' ' + (j + 1).to_s
+  puts "#{i + 1} #{j + 1}"
 end
