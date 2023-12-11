@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def g(x, y)
-  return $precalc[x][y] if x <= $n and y <= $n
+  return $precalc[x][y] if (x <= $n) && (y <= $n)
 
   xq = x / $n
   xr = x % $n

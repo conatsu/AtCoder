@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 N, M, L = gets.chomp.split.map(&:to_i)
 alist = gets.chomp.split.map(&:to_i).each_with_index.map { |a, i| [a, i + 1] }
 blist = gets.chomp.split.map(&:to_i).each_with_index.map { |b, j| [b, j + 1] }

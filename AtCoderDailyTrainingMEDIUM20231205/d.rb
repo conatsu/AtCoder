@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 N = gets.chomp.to_i
 grid = []
 N.times do
-    grid << gets.chomp.split('').map(&:to_i)
+  grid << gets.chomp.split('').map(&:to_i)
 end
 
 # 8方向の移動
-dx = [1,1,1,0,0,-1,-1,-1]
-dy = [1,0,-1,1,-1,1,0,-1]
+dx = [1, 1, 1, 0, 0, -1, -1, -1]
+dy = [1, 0, -1, 1, -1, 1, 0, -1]
 
 max_value = 0
 
@@ -14,7 +16,8 @@ N.times do |start_x|
   N.times do |start_y|
     8.times do |direction|
       now = 0
-      x, y = start_x, start_y
+      x = start_x
+      y = start_y
       N.times do
         now *= 10
         now += grid[x][y].to_i

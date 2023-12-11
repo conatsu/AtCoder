@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def min_cost_to_buy_eggs(n, s, m, l)
   pack_sizes = [6, 8, 12]
   pack_prices = [s, m, l]

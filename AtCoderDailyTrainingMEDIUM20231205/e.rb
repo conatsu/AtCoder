@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 N = gets.chomp.to_i
 plist = gets.chomp.split.map(&:to_i)
 
