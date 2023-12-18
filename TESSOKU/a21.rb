@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 N = gets.to_i
 P = Array.new(N + 1)
 A = Array.new(N + 1)

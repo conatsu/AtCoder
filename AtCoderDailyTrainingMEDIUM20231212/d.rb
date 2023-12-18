@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 people, count = gets.chomp.split(' ').map(&:to_i)
 photos = Array.new(count) { gets.chomp.split(' ').map(&:to_i) }
 

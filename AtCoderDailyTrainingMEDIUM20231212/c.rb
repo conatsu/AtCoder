@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 password = gets.chomp.split('').map(&:to_i)
 
 if password.uniq.size == 1

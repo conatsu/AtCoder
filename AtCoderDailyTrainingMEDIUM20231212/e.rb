@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 N, K = gets.chomp.split.map(&:to_i)
 meds = Array.new(N) { gets.chomp.split.map(&:to_i) }
-meds.sort_by! { |med| med.first }
+meds.sort_by!(&:first)
 
 sum = 0
 meds.each do |med|

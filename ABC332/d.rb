@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 inf = Float::INFINITY
 
 h, w = gets.chomp.split.map(&:to_i)
