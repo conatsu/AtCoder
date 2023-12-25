@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 def nth_repunit_sum(n)
   repunits = (1..12).map { |i| '1' * i }.map(&:to_i)
-
   unique_sums = []
 
   repunits.combination(3).each do |combo|

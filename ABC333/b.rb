@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def distance_equal(p1, p2)
   positions = { 'A' => 1, 'B' => 2, 'C' => 3, 'D' => 4, 'E' => 5 }
   num1 = positions[p1]

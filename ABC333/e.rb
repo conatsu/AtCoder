@@ -12,7 +12,7 @@ crr = 0
 ans = 0
 pickup = []
 
-events.reverse.each_with_index do |event, i|
+events.reverse.each_with_index do |event, _i|
   if event[0] == 2
     require_potions[event[1]] += 1
     crr += 1
