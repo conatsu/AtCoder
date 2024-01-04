@@ -4,12 +4,12 @@ S = gets.chomp
 K = gets.chomp.to_i
 s2 = S * 2
 
-def count_operations(s)
+def count_operations(str)
   count = 0
   i = 0
-  while i < s.size - 1
+  while i < str.size - 1
     j = i + 1
-    j += 1 while j < s.size && s[i] == s[j]
+    j += 1 while j < str.size && str[i] == str[j]
     count += (j - i) / 2
     i = j
   end
